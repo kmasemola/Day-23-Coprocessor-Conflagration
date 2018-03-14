@@ -1,0 +1,67 @@
+b = 79
+c = 79
+if a != 0 then 
+        goto label1
+else 
+        goto label2
+
+ label1:   b = b*100 + 100_000
+ 
+ c = b + 17_000
+ 
+label2:   f = 1
+d = 2
+label5:   e = 2
+label4:   g = d*e - b
+ if g != 0 then 
+   f = 0 
+   
+label3:   e = e + 1
+g = e - b
+ 
+ if g != 0 then 
+         goto label4
+
+d = d + 1
+g = d - b 
+ if g != 0 then 
+        label5
+ if f == 0 then 
+         h = h + 1
+
+label6:   g = b - c
+
+ if g == 0 then
+         exit
+label7:   b = b + 17 
+
+a = b = c = d = e = f = g = h = 0
+
+a = 1   
+
+b = 79
+c = 79
+if a != 0 {
+	b = 107900
+	c = 124900 
+}
+
+while true {
+	isPrime = true  
+	for d in 2...b {
+		for e in 2...b {
+			if d*e == b {
+				isPrime = false
+			}
+		}
+	}
+
+	if isPrime == false {
+		h = h + 1
+	}
+	
+	if b == c {
+		exit
+	}
+	b = b + 17
+}
